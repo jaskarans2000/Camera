@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <link rel="shortcut icon" href="camera-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video class="video" autoplay></video>
+    </div>
+    <div class="recordbtn-container">
+        <div class="record-btn"></div>
+    </div>
+    <div class="capture-container">
+        <div class="capture"></div>
+    </div>
+    <div class="filter-container">
+        <div class="filters none active"></div>
+        <div class="filters grayscale"></div>
+        <div class="filters blur"></div>
+        <div class="filters sepia"></div>
+        <div class="filters saturate"></div>
+    </div>
+    <div class="zoom">
+        <div class="zoomin">
+            <span class="material-icons-outlined material-icons zoomicons">
+                zoom_in
+                </span>
+        </div>
+        <div class="zoomout">
+            <span class="material-icons-outlined material-icons zoomicons">
+                zoom_out
+                </span>
+        </div>
+    </div>
+    <div class="timing">00:00:00</div>
+    <div class="gallery">
+        <span class="material-icons-outlined material-icons">
+            collections
+            </span> 
+    </div>
+    <script src="dbScript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

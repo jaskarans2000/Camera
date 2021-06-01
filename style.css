@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+
+/********************************Video Container ************************************/
+.video-container{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    /* transform: scale(1.5); */
+    /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0 */
+    /* filter: grayscale(100%); */
+    /* filter: blur(20px); */
+    /* filter: sepia(0.4); */
+    /* filter: saturate(2); */
+    /* filter: hue-rotate(0.4turn); */
+}
+
+/********************************Record and Capture Btn *******************/
+.recordbtn-container{
+    position: fixed;
+    right: 5vw;
+    top: 30vh;
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    border: 0.8rem solid white;
+    border-radius: 50%;
+}
+
+.record-btn{
+    height: 3rem;
+    width: 3rem;
+    left: 50%;
+    margin-left: 10px;
+    margin-top: 11px;
+    background-color: red;
+    border-radius: 50%;
+}
+.capture-container{
+    position: fixed;
+    right: 5vw;
+    top: 50vh;
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    border: 0.8rem solid white;
+    border-radius: 50%;
+}
+.capture{
+    height: 3rem;
+    width: 3rem;
+    left: 50%;
+    margin-left: 10px;
+    margin-top: 11px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/********************************************Filters**************************************************/
+.filter-container{
+    position: fixed;
+    height: 20rem;
+    width: 6rem;
+    top: 25%;
+    left: 5%;
+}
+
+.filters{
+    height: 4rem;
+    width: 100%;
+}
+
+.none{
+    background-image: url("filter-placeholder.jpeg");
+    background-size: cover;
+}
+
+.grayscale{
+    background-image: url("filter-placeholder.jpeg");
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+.blur{
+    background-image: url("filter-placeholder.jpeg");
+    filter: blur(2px);
+    background-size: cover;
+}
+
+.sepia{
+    background-image: url("filter-placeholder.jpeg");
+    filter: sepia(0.5);
+    background-size: cover;
+}
+
+.saturate{
+    background-image: url("filter-placeholder.jpeg");
+    filter: saturate(2);
+    background-size: cover;
+}
+
+.active{
+    border: 5px solid white;
+}
+
+/********************************************Zoom***************************************************/
+.zoom{
+    position: fixed;
+    height: 4rem;
+    width: 8rem;
+    display: flex;
+    top: 5%;
+    right: 5%;
+    background-color: white;
+}
+.zoomin{
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoomout{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomicons{
+    font-size: 2rem;
+}
+
+/*****************************************Timer***********************************************/
+.timing{
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 17vh;
+    left: 5%;
+    display: none;
+    z-index: 6;
+}
+
+
+/**********************************************Animations**********************************************/
+.record-animation{
+    animation: scaleUp 1s ;
+    animation-iteration-count: infinite;
+}
+
+.capture-animation{
+    animation: scaleUp 1s;
+    animation-iteration-count: 1;
+}
+
+/**************************************Gallery Button*******************************************************/
+.gallery{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 4rem;
+    width: 4rem;
+    color: white;
+}
+
+@keyframes scaleUp {
+    0%{
+        transform: scale(1);
+    }
+   50%{
+    transform: scale(1.08);
+   }
+    100%{
+        transform: scale(1);
+    }
+    
+}
