@@ -5,3 +5,5 @@ the application. All the images and videos can be viewed , deleted or downloaded
 
 # Tech stack used
 HTML,CSS,Javascript
+
+https://jaskarans2000.github.io/Camera/
